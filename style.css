@@ -1,0 +1,131 @@
+/* --- 1. RESET CSS & PENGATURAN DASAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- 2. WADAH UTAMA APLIKASI --- */
+.app-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* --- 3. HEADER & INDIKATOR --- */
+.app-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.app-header p {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.card-counter {
+    font-size: 12px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- 4. KOTAK FLASHCARD --- */
+.flashcard {
+    background-color: #fafbfc;
+    border: 2px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 35px 20px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.flashcard:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+}
+
+.card-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8c959f;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#card-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #24292f;
+    line-height: 1.5;
+}
+
+/* --- 5. TOMBOL AKSI & NAVIGASI --- */
+button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn-flip {
+    width: 100%;
+    background-color: #e7f5ff;
+    color: #007bff;
+    padding: 12px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.btn-flip:hover {
+    background-color: #d0ebff;
+}
+
+.navigation-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-nav {
+    flex: 1;
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.btn-nav:hover {
+    background-color: #e9ecef;
+}

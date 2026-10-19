@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flashcard App</title>
+    <!-- Hubungkan berkas CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Wadah Utama Aplikasi Flashcard -->
+    <main class="app-container">
+        
+        <!-- Judul Aplikasi -->
+        <header class="app-header">
+            <h1>Flashcard Belajar Web Dev</h1>
+            <p>Uji pemahaman konsep dasar pemrograman web Anda</p>
+        </header>
+
+        <!-- Indikator Posisi Kartu (Contoh: Kartu 1 dari 4) -->
+        <div class="card-counter" id="card-counter">Kartu 1 dari 4</div>
+
+        <!-- Kotak Kartu (Flashcard) -->
+        <div class="flashcard" id="flashcard">
+            <div class="card-content">
+                <span class="card-label" id="card-label">Pertanyaan</span>
+                <p id="card-text">Memuat pertanyaan...</p>
+            </div>
+        </div>
+
+        <!-- Tombol Aksi (Flip / Membalik Kartu) -->
+        <button class="btn-flip" id="btn-flip">🔄 Balik Kartu (Lihat Jawaban)</button>
+
+        <!-- Tombol Navigasi (Sebelumnya & Selanjutnya) -->
+        <div class="navigation-controls">
+            <button class="btn-nav" id="btn-prev">⬅️ Sebelumnya</button>
+            <button class="btn-nav" id="btn-next">Selanjutnya ➡️</button>
+        </div>
+
+    </main>
+
+    <!-- Hubungkan berkas JavaScript dengan atribut defer -->
+    <script src="script.js" defer></script>
+</body>
+</html>
